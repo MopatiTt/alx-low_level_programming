@@ -7,6 +7,10 @@
  */
 int main(void)
 {
-	fwrite(1, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+	const char str[] = " and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	const unsigned int len = sizeof(str) - 1;
+	const int fd = 2;
+	write(fd, str, len);
+
 	return (1);
 }
