@@ -3,26 +3,23 @@
 /**
  * main - Entry point
  *
- * Description: Prints all numbers of base 16 in lowercase, followed by a new line.
- *
- * Return: Always 0 (success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-    int i;
+	int i;
 
-    for (i = 48; i < 58; i++)
-    {
-        putchar(i);
-    }
+	for (i = 0; i < 10; i++)
+	{
+		putchar(i + '0');
+	}
 
-    for (i = 97; i < 103; i++)
-    {
-        putchar(i);
-    }
+	for (i = 'a'; i <= 'f'; i++)
+	{
+		putchar(i);
+	}
 
-    putchar('\n');
+	putchar('\n');
 
-    return (0);
+	return (0);
 }
-
